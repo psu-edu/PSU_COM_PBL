@@ -1,0 +1,52 @@
+Collected code as examples, to incorporate new features; some may be used in this web site.
+
+<embed src="http://example.com/the.pdf" width="500" height="375" type='application/pdf'>
+<object data="http://yoursite.com/the.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="http://yoursite.com/the.pdf">
+        This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+<object data="/pdf/sample-3pp.pdf#page=2" type="application/pdf" width="100%" height="100%">
+<iframe src="/pdf/sample-3pp.pdf#page=2" width="100%" height="100%" style="border: none;">
+This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>
+</iframe>
+</object>
+
+    <object data="Cardio_SS/PBL1315EKG4Bedited.pdf" type="application/pdf" width="100%" height="auto">
+    <iframe src="Cardio_SS/PBL1315EKG4Bedited.pdf" width="100%" height="auto" style="border: none;">
+    This browser does not support PDFs. Please download the PDF to view it: <a href="Cardio_SS/PBL1315EKG4Bedited.pdf">Download PDF</a>
+    </iframe>
+    </object>
+
+<!    <td width="100%" height="auto">
+<!	<p align="center"><embed src="Cardio_SS/PBL1315EKG4B.jpg" height="100%" alt="PBL 1315 CXR 5, PA"></a></td>
+
+<!the working code for the normal EKG, but not working in IE without a pdf rendering package>
+    <td width="100%" height="100%" align="center">
+    <object data="Cardio_SS/EKGNormalAnnotatedColor.pdf" type="application/pdf">
+    <embed src="Cardio_SS/EKGNormalAnnotatedColor.pdf" type="application/pdf" />
+    </object>
+    </tr>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+
+
+<! attempt to determine if there is a rendering add in>
+  if(PDFObject.supportsPDFs){
+    console.log("Yay, this browser supports inline PDFs.");
+  } else {
+    console.log("Boo, inline PDFs are not supported by this browser");
+  }
+  </tr>
+
+To force display of the latest web code:
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />

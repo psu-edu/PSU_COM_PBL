@@ -1,0 +1,27 @@
+Notes for Scripts
+
+JavaScript used in
+  1301
+  1302
+  1303
+  1304
+  1305
+  1306
+  1307
+  1308
+  1309
+  1310
+  1311 
+  1314 GoBack, GetDate; delayed display of emphysema pathology
+  1315 GoBack, GetDate; delayed display of AVM angiography
+  1316 GoBack
+  1317 GoBack, GetDate; delayed display of pneumonia pathology
+
+getDate function
+  first web page to use date is PBL1314
+  used in PBL1314
+    it shows "Path Image 1" before January 24, 2022 09:50  
+    it shows "Emphysema" on that first Monday, after 09:50, when the diagnosis should be known
+  used on PBL1317 to obscure all pathology images until the end of day 1 PBL session (January 31, 2022 09:50)
+  used on PBL1315 to hide chest CT and angiogram until 8 am of second day (February 04 2022 08:00)
+
