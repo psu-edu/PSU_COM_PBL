@@ -10,18 +10,27 @@ CONTENT="Penn State College of Medicine Heart and Blood Vessels Pathology slides
 CONTENT="Pathology Slides, Penn State College of Medicine, Heart, Blood Vessels">
 <title>Heart and Blood Vessels PBL Case 1301 Pathology and Radiology Menu</title>
 <base target="_self">
+</head>
 
+<script language="javascript">
+function PBLreveal() {
+  var now = new Date();
+<!-- This should be made visible after the second PBL session for case 1301 -->
+  var PBLfirst = new Date("November 15, 2023 09:50:00");
+  if (now.getTime() > PBLfirst.getTime()) {return("true")}
+  else {return("false");}
+}
+</script>
 <style>
 /* Dotted black line */
 hr.new1 {
-  border-top: 1px dotted black;
+  border-top: 1px dotted grey;
 }
 /* Solid grey line */
 hr.new2 {
-  border-top: 1px solid grey;
+  border-top: 1px solid black;
 }
 </style>
-</head>
 
 <body TEXT="#000000" BGCOLOR="#FCF8D3" LINK="#0000FF" VLINK="#0000FF" ALINK="#808080"
 topmargin="0" leftmargin="5">
@@ -53,7 +62,16 @@ topmargin="0" leftmargin="5">
 <p><font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/EKG_Normal_Annotated.html">EKG Normal, annotated</a></font></p>
 <hr class="new2">
 <p><font face="Arial" size="3" color="#000080"><b>Heart <a name="Sounds">Sounds</a></b></font></p>
-<p><font face="Arial" size="2">&nbsp;&nbsp;<a href="../cardio/HeartSound04.htm" target="_blank">Hypertension</a></font></p>
-<p><font face="Arial" size="2">&nbsp;&nbsp;<a href="../cardio/wav-files/NormalSplitting.WAV" target="_blank">Physiologic Splitting of S<sub>2</sub></a></font></p>
+<p><font face="Arial" size="2">&nbsp;&nbsp;<a href="../cardio/HeartSound04.htm" target="display">Hypertension</a></font></p>
+<p><font face="Arial" size="2">&nbsp;&nbsp;<a href="../cardio/S2_Splitting.htm" target="display">Physiologic Splitting of S<sub>2</sub>, video clip</a></font></p>
+<p><font face="Arial" size="2">&nbsp;&nbsp;<a href="https://stanfordmedicine25.stanford.edu/the25/cardiac.html" target="_blank">Resource for Analysis of S<sub>2</sub></a></font></p>
+
+<script language="javascript">
+if (PBLreveal() == "true") {
+  document.write("<hr class=\"new2\">");
+  document.write("<font face=\"Arial\" size=\"3\" color=\"#000080\"><b><a name=\"Video\">Video</a></b></font></p>");
+  document.write("<p><font size=\"2\" face=\"Arial\">&nbsp;&nbsp;<a target=\"display\" href=\"../cardio/PBL1301PatientPresentation.htm\">Case Patient Presentation</font></a></p>");
+}
+</script>
 </body>
 </html>
