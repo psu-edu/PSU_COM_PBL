@@ -1,18 +1,18 @@
 <html>
 
-<!-- The angiogram is to be hidden until the second PBL session (02/12/2021, 8 am) -->
+<!-- The angiogram is to be hidden until the second PBL session at 8 am) -->
 
 <head>
 <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
 <meta NAME="GENERATOR" CONTENT="NotePad">
-<title>CardioPulmonary PBL Case 1315 Menu</title>
+<title>Respiratory PBL Case 1315 Menu</title>
 <base target="_self">
 </head>
 <script language="javascript">
 function PBLreveal() {
   var now = new Date();
 <!-- This should be made visible at 8am on the second PBL session for case 1315 -->
-  var PBLfirst = new Date("February 04, 2022 08:00:00");
+  var PBLfirst = new Date("February 02, 2024 08:00:00");
   if (now.getTime() > PBLfirst.getTime()) {return("true")}
   else {return("false");}
 }
@@ -40,6 +40,9 @@ topmargin="0" leftmargin="5">
 if (PBLreveal() == "true") {
   document.write("<p>&nbsp;&nbsp;<font size=\"2\" face=\"Arial\"><a target=\"display\" href=\"../cardio/PBL1315_Angio.html\">Chest Angiogram</font></a></p>");
   document.write("<p>&nbsp;&nbsp;<font size=\"2\" face=\"Arial\"><a target=\"display\" href=\"../cardio/PBL1315_NasalMucosa.htm\">Nasal Mucosa Exam</font></a></p>");
+}
+else {
+  document.write("<font face=\"Arial\" size=\"2\" color=\"#000080\">&nbsp;&nbsp;More images to come...</font></p>");
 }
 </script>
 <hr>
