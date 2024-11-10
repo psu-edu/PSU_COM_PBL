@@ -16,7 +16,7 @@ CONTENT="Pathology Slides, PSU, HMC, Hershey Medical Center, Penn State College 
 function PBLreveal() {
   var now = new Date();
 <!-- This should be made visible after the second PBL session for case 1302 -->
-  var PBLfirst = new Date("November 17, 2023 09:50:00");
+  var PBLfirst = new Date("November 15, 2024 09:30:00");
   if (now.getTime() > PBLfirst.getTime()) {return("true")}
   else {return("false");}
 }
@@ -29,29 +29,32 @@ topmargin="0" leftmargin="5">
 <hr>
 
 <p><font face="Arial" size="3" color="#000080"><b><a name="Pathology">Pathology</a> Images</b></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_3-2.htm">Aortic Aneurysm</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_3-6.htm"ile">Aortic Dissection</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_aa_1.htm">Aortic Atherosclerosis 1</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_aa_2.htm">Aortic Atherosclerosis 2</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_3-1.htm">Aortic Atherosclerosis 3</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_3-4.htm">Atherosclerotic Plaque</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_3-5.htm">Atherosclerotic Plaque, Cholesterol Clefts</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_3-3.htm">Thrombus, Arterial</a></font></p>
+<p><font size="2" face="Arial">&ensp;<a target="display" href="../cardio/kapadia-zangwill_3-2.htm">Aortic Aneurysm</a></font></p>
+<p><font size="2" face="Arial">&ensp;<a target="display" href="../cardio/kapadia-zangwill_3-6.htm"ile">Aortic Dissection</a></font></p>
+<p><font size="2" face="Arial">&ensp;<a target="display" href="../cardio/kapadia-zangwill_aa_1.htm">Aortic Atherosclerosis 1</a></font></p>
+<p><font size="2" face="Arial">&ensp;<a target="display" href="../cardio/kapadia-zangwill_aa_2.htm">Aortic Atherosclerosis 2</a></font></p>
+<p><font size="2" face="Arial">&ensp;<a target="display" href="../cardio/kapadia-zangwill_3-1.htm">Aortic Atherosclerosis 3</a></font></p>
+<p><font size="2" face="Arial">&ensp;<a target="display" href="../cardio/kapadia-zangwill_3-4.htm">Atherosclerotic Plaque</a></font></p>
+<p><font size="2" face="Arial">&ensp;<a target="display" href="../cardio/kapadia-zangwill_3-5.htm">Atherosclerotic Plaque, Cholesterol Clefts</a></font></p>
+<p><font size="2" face="Arial">&ensp;<a target="display" href="../cardio/kapadia-zangwill_3-3.htm">Thrombus, Arterial</a></font></p>
 <hr>
 <p><font face="Arial" size="3" color="#000080"><b><a name="Radiographic">Radiographic</a> Images</b></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/CoarctationMRI.htm">Coarctation MRI</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/AAA_CT_Angio.htm">Abdominal Aortic Aneurysm, CT Angio</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/AAA_CT_Angio2.htm">Abdominal Aortic Aneurysm, CT Angio 2</a></font></p>
+<p><font size="2" face="Arial">&ensp;<a target="display" href="../cardio/CoarctationMRI.htm">Coarctation MRI</a></font></p>
+<p><font size="2" face="Arial">&ensp;<a target="display" href="../cardio/AAA_CT_Angio.htm">Abdominal Aortic Aneurysm, CT Angio</a></font></p>
+<p><font size="2" face="Arial">&ensp;<a target="display" href="../cardio/AAA_CT_Angio2.htm">Abdominal Aortic Aneurysm, CT Angio 2</a></font></p>
 <hr>
 <p><font face="Arial" size="3" color="#000080"><b>Heart <a name="Sounds">Sounds</a></b></font></p>
-<p><font face="Arial" size="2"><a href="../cardio/wav-files/ChronicAorticRegurgita.WAV" target="_blank">Aortic Regurgitation</a></font></p>
-<p><font face="Arial" size="2">&nbsp;&nbsp;<a href="../cardio/S2_Splitting.htm" target="display">Physiologic Splitting of S<sub>2</sub>, video clip</a></font></p>
+<p><font face="Arial" size="2">&ensp;<a href="../cardio/wav-files/ChronicAorticRegurgita.WAV" target="_blank">Aortic Regurgitation</a></font></p>
+<p><font face="Arial" size="2">&ensp;<a href="../cardio/S2_Splitting.htm" target="display">Physiologic Splitting of S<sub>2</sub>, video clip</a></font></p>
 
 <script language="javascript">
 if (PBLreveal() == "true") {
   document.write("<hr class=\"new2\">");
   document.write("<font face=\"Arial\" size=\"3\" color=\"#000080\"><b><a name=\"Video\">Video</a></b></font></p>");
   document.write("<p><font size=\"2\" face=\"Arial\">&nbsp;&nbsp;<a target=\"display\" href=\"../cardio/PBL1302PatientPresentation.htm\">Case Patient Presentation</font></a></p>");
+}
+else {
+  document.write("<font face=\"Arial\" size=\"2\" color=\"#000080\">Patient presentation (Come back later...)</font></p>");
 }
 </script>
 </body>

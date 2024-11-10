@@ -16,7 +16,7 @@ CONTENT="Pathology Slides, Penn State College of Medicine, Heart, Blood Vessels"
 function PBLreveal() {
   var now = new Date();
 <!-- This should be made visible after the second PBL session for case 1301 -->
-  var PBLfirst = new Date("November 15, 2023 09:50:00");
+  var PBLfirst = new Date("November 13, 2024 09:30:00");
   if (now.getTime() > PBLfirst.getTime()) {return("true")}
   else {return("false");}
 }
@@ -72,6 +72,8 @@ if (PBLreveal() == "true") {
   document.write("<font face=\"Arial\" size=\"3\" color=\"#000080\"><b><a name=\"Video\">Video</a></b></font></p>");
   document.write("<p><font size=\"2\" face=\"Arial\">&nbsp;&nbsp;<a target=\"display\" href=\"../cardio/PBL1301PatientPresentation.htm\">Case Patient Presentation</font></a></p>");
 }
-</script>
+else {
+  document.write("<font face=\"Arial\" size=\"2\" color=\"#000080\">Patient presentation (Come back later...)</font></p>");
+}</script>
 </body>
 </html>
