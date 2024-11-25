@@ -15,8 +15,8 @@ CONTENT="Pathology Slides, PSU, HMC, Hershey Medical Center, Penn State College 
 <script language="javascript">
 function PBLreveal() {
   var now = new Date();
-<!-- This should be made visible after the discovery day for case 1318 -->
-  var PBLfirst = new Date("December 4, 2023 09:50:00");
+<!-- This should be made visible after the discovery day for case 1318 which is the second case that day -->
+  var PBLfirst = new Date("December 2, 2023 09:50:00");
   if (now.getTime() > PBLfirst.getTime()) {return("true")}
   else {return("false");}
 }
@@ -38,7 +38,7 @@ topmargin="0" leftmargin="5">
 <script language="javascript">
 if (PBLreveal() == "true") {
   document.write("<hr class=\"new2\">");
-  document.write("<font face=\"Arial\" size=\"3\" color=\"#000080\"><b><a name=\"Video\">Video</a></b></font></p>");
+  document.write("<font face=\"Arial\" size=\"3\" color=\"#000080\"><b><a name=\"Resources\">Resources</a></b></font></p>");
   document.write("<p><font size=\"2\" face=\"Arial\">&nbsp;&nbsp;<a target=\"display\" href=\"../cardio/Cardio_SS/AtrialFibrillationGuidelines2023.pdf\">Atrial Fibrillation Guidelines</font></a></p>");
 }
 </script>
