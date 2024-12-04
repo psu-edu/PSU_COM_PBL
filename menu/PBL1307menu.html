@@ -11,6 +11,32 @@ CONTENT="Pathology Slides, PSU, HMC, Hershey Medical Center, Penn State College 
 <title>Heart and Blood Vessels PBL Case 1307 Pathology and Radiology Menu</title>
 <base target="_self">
 </head>
+<script language="javascript">
+function PBLreveal() {
+  var now = new Date();
+<!-- This should be made visible at the end of the second PBL session for case 1301 -->
+  var PBLfirst = new Date("December 01, 2024 09:30:00");
+  if (now.getTime() > PBLfirst.getTime()) {return("true")}
+  else {return("false");}
+}
+</script>
+<style>
+/* Dotted black line */
+hr.new1 {
+  border-top: 1px dotted grey;
+}
+/* Solid grey line */
+hr.new2 {
+  border-top: 1px solid black;
+}
+p.big {
+  line-height: 1.6;
+}
+P { 
+   padding: 0px; 
+   margin: 0px; 
+} 
+</style>
 
 <body TEXT="#000000" BGCOLOR="#FCF8D3" LINK="#0000FF" VLINK="#0000FF" ALINK="#808080"
 topmargin="0" leftmargin="5">
@@ -18,39 +44,47 @@ topmargin="0" leftmargin="5">
 <p align="left"><img src="../images/ps2copy.gif" width="163" height="72">
 <p align="center"><font face="Arial" size="4" color="#808080"><strong>Cardiology PBL Case 1307</strong></font></p>
 <hr>
-<p><font face="Arial" size="3" color="#000080"><b>Physical<a name="Exam"> Exam</a></b></font></p>
-<p> <font size="2" face="Arial"><a target="display" href="../cardio/Oral_exam1.htm">Mouth/Oral Exam</a></font></p>
-<p> <font size="2" face="Arial"><a target="display" href="../cardio/Finger_exam1.htm">Finger Exam</a></font></p>
-<p> <font size="2" face="Arial"><a target="display" href="../cardio/RetinaRothSpots.htm">Retinal Roth Spots</a></font></p>
-
+<p class="big"><font face="Arial" size="3" color="#000080"><b>Physical<a name="Exam"> Exam</a></b></font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/Oral_exam1.htm">Mouth/Oral Exam</a></font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/Finger_exam1.htm">Fingernail Exam</a></font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/Palmar_exam.htm">Palmar Exam</a></font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/RetinaRothSpots.htm">Retinal Exam</a></font></p>
+<hr class="new1">
+<p class="big"><font face="Arial" size="3" color="#000080"><b>Pathology<a name="Pathology"> Images</a></b></font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/MitralValveGrossNormal1.htm">Mitral Valve, Normal Anatomy</a></font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/kapadia-zangwill_mvp_1.htm">Mitral Valve Prolapse 1</a></font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/kapadia-zangwill_6-1.htm">Mitral Valve Prolapse 2</a></font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/kapadia-zangwill_6-2.htm">Staph Aureus Endocarditis</a></font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/kapadia-zangwill_6-3.htm">Infective Endocarditis 1</a></font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/kapadia-zangwill_6-5.htm">Infective Endocarditis 2 (microscopic)</a></font></p>
+<hr class="new1">
+<p class="big"><font face="Arial" size="3" color="#000080"><b>Radiographic<a name="Radiographic"> Images</a></b></font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/PBL1307_DentalFilm2.htm">Dental Radiograph</a></font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/PBL1307_CXR1_PA.htm">CXR - Severe Mitral Regurgitation</a></font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/PBL1307_HeadCT.htm">Head CT</a></font></p>
+<hr class="new1">
+<p class="big"><font face="Arial" size="3" color="#000080"><b>Heart <a name="Sounds">Sounds</a></b></font><br>
+<font color="#0000FF" face="Arial" size="2">&nbsp;&nbsp;<a href="../cardio/wav-files/MidsystolicClick.WAV" target="_blank">Midsystolic Click (MVP)</a></font><br>
+<font color="#0000FF" face="Arial" size="2">&nbsp;&nbsp;<a href="../cardio/wav-files/NormalSplitting.WAV" target="_blank">Physiologic Splitting of S<sub>2</sub></a></font><br>
+<font color="#0000FF" face="Arial" size="2">&nbsp;&nbsp;<a href="../cardio/wav-files/ChronicMitralRegurgita.WAV" target="_blank">Chronic Mitral Regurgitation</a></font></p>
+<hr class="new1">
+<p class="big"><font face="Arial" size="3" color="#000080"><b><a name="Tooth">Tooth</a> Disease</b></font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a target="display" href="../cardio/PeriapicalDiseaseProgression.htm">Pathophysiology of Periapical Abscess</a></font></p>
+<hr class="new1">
+<p class="big"><font face="Arial" size="3" color="#000080"><b>Echocardiograms</b> (download)</font><br>
+<font size="2" face="Arial">&nbsp;&nbsp;<a href="../cardio/Cardio_SS/Case1307Echo_MVP_Endocarditis.pptx" target="display">Endocarditis PowerPoint</a></font></p>
 <hr>
-<p><font face="Arial" size="3" color="#000080"><b>Pathology<a name="Pathology"> Images</a></b></font></p>
-<p> <font size="2" face="Arial"><a target="display" href="../cardio/MitralValveGrossNormal1.htm">Mitral Valve, Normal Anatomy</a></font></p>
-<p> <font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_mvp_1.htm">Mitral Valve Prolapse 1</a></font></p>
-<p> <font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_6-1.htm">Mitral Valve Prolapse 2</a></font></p>
-<p> <font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_6-2.htm">Staph Aureus Endocarditis</a></font></p>
-<p> <font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_6-3.htm">Infective Endocarditis 1</a></font></p>
-<p> <font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_6-5.htm">Infective Endocarditis 2 (microscopic)</a></font></p>
+<p class="big">
 
-<hr>
-<p><font face="Arial" size="3" color="#000080"><b>Radiographic<a name="Radiographic"> Images</a></b></font></p>
-<p> <font size="2" face="Arial"><a target="display" href="../cardio/PBL1307_DentalFilm2.htm">Dental Radiograph</a></font></p>
-<p> <font size="2" face="Arial"><a target="display" href="../cardio/PBL1307_CXR1_PA.htm">CXR - Severe Mitral Regurgitation</a></font></p>
-
-<hr>
-<p><font face="Arial" size="3" color="#000080"><b>Heart <a name="Sounds">Sounds</a></b></font></p>
-<p> <font color="#0000FF" face="Arial" size="2"><a href="../cardio/wav-files/MidsystolicClick.WAV" target="_blank">Midsystolic Click (MVP)</a></font></p>
-<p> <font color="#0000FF" face="Arial" size="2"><a href="../cardio/wav-files/NormalSplitting.WAV" target="_blank">Physiologic Splitting of S<sub>2</sub></a></font></p>
-<p> <font color="#0000FF" face="Arial" size="2"><a href="../cardio/wav-files/ChronicMitralRegurgita.WAV" target="_blank">Chronic Mitral Regurgitation</a></font></p>
-
-<hr>
-<p><font face="Arial" size="3" color="#000080"><b><a name="Tooth">Tooth</a> Disease</b></font></p>
-<p> <font size="2" face="Arial"><a target="display" href="../cardio/PeriapicalDiseaseProgression.htm">Pathophysiology of Periapical Abscess</a></font></p>
-
-<hr>
-<p><font face="Arial" size="3" color="#000080"><b>Echocardiograms</b> (download)</font></p>
-<p> <font size="2" face="Arial"><a href="../cardio/Cardio_SS/Case1307Echo_MVP_Endocarditis.pptx" target="display">PowerPoint Presentation on Endocarditis</a></font></p>
-<hr>
-
+<script language="javascript">
+if (PBLreveal() == "true") {
+  document.write("<font face=\"Arial\" size=\"3\" color=\"#000080\"><b><a name=\"Resources\">Resources</a></b></font><br>");
+  document.write("<font size=\"2\" face=\"Arial\">&nbsp;&nbsp;<a target=\"display\" href=\"../cardio/cardio_SS/IE_Prophylaxis2007.pdf\">Endocarditis Prophylaxis</font></a><br>");
+  document.write("<font size=\"2\" face=\"Arial\">&nbsp;&nbsp;<a target=\"display\" href=\"../cardio/cardio_SS/DukeCriteria2023.pdf\">Duke Criteria 2023</font></a><br>");
+  document.write("<font size=\"2\" face=\"Arial\">&nbsp;&nbsp;<a target=\"display\" href=\"../cardio/cardio_SS/AHA_InfectiveEndocarditis.pdf\">AHA Infective Endocarditis Statement</font></a></p>");
+}
+else {
+  document.write("<font face=\"Arial\" size=\"2\" color=\"#000080\">(Come back later...)</font>");
+}</script>
 </body>
 </html>
