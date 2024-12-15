@@ -11,30 +11,64 @@ CONTENT="Pathology Slides, PSU, HMC, Hershey Medical Center, Penn State College 
 <title>Heart and Blood Vessels PBL Case 1305 Pathology and Radiology Menu</title>
 <base target="_self">
 </head>
-
+<script language="javascript">
+function PBLreveal() {
+  var now = new Date();
+<!-- This should be made visible at the end of the second PBL session for case 1305 -->
+  var PBLfirst = new Date("November 13, 2024 09:30:00");
+  if (now.getTime() > PBLfirst.getTime()) {return("true")}
+  else {return("false");}
+}
+</script>
+<style>
+/* Dotted black line */
+hr.new1 {
+  border-top: 1px dotted grey;
+}
+/* Solid grey line */
+hr.new2 {
+  border-top: 1px solid black;
+}
+p.big {
+  line-height: 1.8;
+}
+P { 
+   padding: 0px; 
+   margin: 0px; 
+} 
+</style>
 <body TEXT="#000000" BGCOLOR="#FCF8D3" LINK="#0000FF" VLINK="#0000FF" ALINK="#808080"
 topmargin="0" leftmargin="5">
 
 <p align="left"><img src="../images/ps2copy.gif" width="163" height="72">
 <p align="center"><font face="Arial" size="4" color="#808080"><strong>Cardiology PBL Case 1305</strong></font></p>
 <hr>
-<p><strong><font face="Times New Roman" size="4" color="#0000A0">Pathology Images:</font></strong></p>
-
-<p><font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_4-1.htm">Acute Subendocardial Infarct, Gross</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/MalyszInfarction01.htm">Acute Myocardial Infarct, Transmural, Gross</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_4-2.htm">Acute Myocardial Infarct, Transmural, NBT stain</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_4-5.htm">Acute Myocardial Infarct, Microscopic</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_4-3.htm">Acute Myocardial Infarct, Old</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_4-6.htm">Acute Myocardial Infarct, Old, Microscopic</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_4-4.htm">Coronary Artery Bypass Graft</a></font></p>
+<p class="big"><strong><font face="Times New Roman" size="4" color="#0000A0">Pathology Images:</font></strong><br>
+<font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_4-1.htm">Acute Subendocardial Infarct, Gross</a></font><br>
+<font size="2" face="Arial"><a target="display" href="../cardio/MalyszInfarction01.htm">Acute Myocardial Infarct, Transmural, Gross</a></font><br>
+<font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_4-2.htm">Acute Myocardial Infarct, Transmural, NBT stain</a></font><br>
+<font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_4-5.htm">Acute Myocardial Infarct, Microscopic</a></font><br>
+<font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_4-3.htm">Acute Myocardial Infarct, Old</a></font><br>
+<font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_4-6.htm">Acute Myocardial Infarct, Old, Microscopic</a></font><br>
+<font size="2" face="Arial"><a target="display" href="../cardio/kapadia-zangwill_4-4.htm">Coronary Artery Bypass Graft</a></font></p>
 
 <hr>
-<p><font face="Arial" size="3" color="#000080"><b>Electrocardiograms</b></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/EKG_Normal_Annotated.html">EKG,&ensp;Normal Trace, Annotated</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/PBL1305_EKG1.htm">EKG,&ensp;Acute Event</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/PBL1305_EKG2.htm">EKG, 1 Day After Acute Chest Pain</a></font></p>
-<p><font size="2" face="Arial"><a target="display" href="../cardio/PBL1305_EKG3.htm">EKG, 5 Days After Acute Chest Pain</a></font></p>
+<p class="big"><font face="Arial" size="3" color="#000080"><b>Electrocardiograms</b></font><br>
+<font size="2" face="Arial"><a target="display" href="../cardio/EKG_Normal_Annotated.html">EKG,&ensp;Normal Trace, Annotated</a></font><br>
+<font size="2" face="Arial"><a target="display" href="../cardio/PBL1305_EKG1.htm">EKG,&ensp;Acute Event</a></font><br>
+<font size="2" face="Arial"><a target="display" href="../cardio/PBL1305_EKG2.htm">EKG, 1 Day After Acute Chest Pain</a></font><br>
+<font size="2" face="Arial"><a target="display" href="../cardio/PBL1305_EKG3.htm">EKG, 5 Days After Acute Chest Pain</a></font></p>
+<hr>
+<p class="big">
 
+<script language="javascript">
+if (PBLreveal() == "true") {
+  document.write("<font face=\"Arial\" size=\"3\" color=\"#000080\"><b><a name=\"Video\">Video</a></b></font><br>");
+  document.write("<font size=\"2\" face=\"Arial\">&nbsp;&nbsp;<a target=\"display\" href=\"../cardio/PBL1305PatientPresentation.htm\">Case Patient Presentation</font></a>");
+}
+else {
+  document.write("<font face=\"Arial\" size=\"2\" color=\"#000080\">Patient presentation (Come back later...)</font>");
+}</script>
 
 </body>
 </html>
